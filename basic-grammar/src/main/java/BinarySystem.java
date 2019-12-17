@@ -7,11 +7,10 @@
  * 八进制: 0-7 满8进1，以数字0开头表示
  * 十进制: 0-9 满10进1
  * 十六进制: 0-9及A-F 满16进1，以0x或0X开头(是数字0，不是英文字母o)。此处A-F不分大小写
- *
  */
 public class BinarySystem {
 
-    public static void main(String[] args) {
+    public void test() {
         // 二进制100
         int i1 = 0b01100100;
         // 八进制100
@@ -20,10 +19,15 @@ public class BinarySystem {
         int i3 = 100;
         // 十六进制100
         int i4 = 0x64;
-        System.out.println(i1);
-        System.out.println(i2);
-        System.out.println(i3);
-        System.out.println(i4);
+
+        // 原码(二进制表示，最高位为符号位0-正数，1-负数)、反码、补码。正数和负数，在底层，都是以补码的形式来存的
+        // 对于正数来说，原码、反码、补码，三码合一
+        // 13的原码、、反码、补码都为：0000 1101
+        // 负数的原码、反码、补码：
+        // -13的原码：1000 1101，把原码最高位改为1，表示负数
+        // -13的反码：1111 0010，除符号位取反。
+        // -13的补码：1111 0011，反码加1
+
     }
 
 }
