@@ -1,12 +1,8 @@
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * @author theboyaply
  * @version V1.0
  * @Date 2019-12-17
  * @description
- *
  */
 public class ArithmeticOperator {
 
@@ -28,7 +24,7 @@ public class ArithmeticOperator {
         double d1 = i / 5;
         // 此时结果为2.4
         double d2 = i / 5.0;
-        double d3 = (double)i / 5;
+        double d3 = (double) i / 5;
 
         // 取模，结果的正负取决于被模数的正负
         // 2
@@ -86,14 +82,13 @@ public class ArithmeticOperator {
      * || 短路或
      * ! 逻辑非
      * ^ 逻辑异或
-     *
+     * <p>
      * 关系表
      * a     b     a&b   a|b   a&&b  a||b  a^b   !a
      * true  true  true  true  true  true  false false
      * true  fale  false true  false true  true  false
      * false true  false true  false true  true  true
      * false false false false false false false true
-     *
      */
     public void test4() {
         // 逻辑与/逻辑或 和 短路与/短路或的区别
@@ -136,29 +131,29 @@ public class ArithmeticOperator {
      */
     public void test5() {
         // 左移示例：
-        int i2 = 31<<2;
+        int i2 = 31 << 2;
         //   0000 0000 0001 1111 = 31
         // 0000 0000 0001 111100
         //   00 0000 0001 111100 = 124
         // 左移两位，舍去头两位，末尾补0
 
         // 右移示例：
-        int i3 = 31>>2;
+        int i3 = 31 >> 2;
         //   0000 0000 0001 1111 = 31
         //   000000 0000 0001 1111
         //   000000 0000 0001 11 = 7
-        int i4 = -31>>2;
+        int i4 = -31 >> 2;
         // 1111 1111 1110 0001 = -31
         // 111111 1111 1110 0001
         // 111111 1111 1110 00
         // 右移两位，头两位按符号补0或1，舍去尾两位
 
         // 无符号右移
-        int i5 = 31>>>2;
+        int i5 = 31 >>> 2;
         //   0000 0000 0001 1111 = 31
         //   000000 0000 0001 1111
         //   000000 0000 0001 11 = 7
-        int i6 = -31>>>2;
+        int i6 = -31 >>> 2;
         // 1111 1111 1110 0001 = -31
         // 001111 1111 1110 0001
         // 001111 1111 1110 00
